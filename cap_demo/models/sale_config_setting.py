@@ -9,14 +9,14 @@ _logger = logging.getLogger(__name__)
 
 
 class SaleConfiguration(models.TransientModel):
-    _inherit = 'sale.config.settings'
+    _inherit = 'res.config.settings'
     
     # Inherit field
-    group_product_variant = fields.Selection(default=1)
-    group_uom = fields.Selection(default=1)
-    sale_pricelist_setting = fields.Selection(default='formula')
-    group_sale_layout = fields.Selection(default=1)
-    group_route_so_lines = fields.Selection(default=1)
+    group_product_variant = fields.Boolean(default=1)
+    group_uom = fields.Boolean(default=1)
+    multi_sales_price_method = fields.Selection(default='formula')
+    group_sale_layout = fields.Boolean(default=1)
+    group_route_so_lines = fields.Boolean(default=1)
     
 #     @api.model
 #     def set_default_demo_values(self):

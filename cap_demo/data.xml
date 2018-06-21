@@ -4,7 +4,6 @@
 <!-- COMPANY BASE -->	
 	 <record id="base.main_company" model="res.company">
             <field name="name">Captivea</field>
-            <field name="rml_header1">Captivea</field>
      </record>
      
      <record id="base.main_partner" model="res.partner">

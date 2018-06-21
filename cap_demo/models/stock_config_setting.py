@@ -9,8 +9,8 @@ _logger = logging.getLogger(__name__)
 
 
 class StockSettings(models.TransientModel):
-    _inherit = 'stock.config.settings'
+    _inherit = 'res.config.settings'
 
     
     # Inherit field
-    group_stock_packaging = fields.Selection(default=1)
+    group_stock_packaging = fields.Boolean(default=1)

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	
+<!-- COMPANY BASE -->	
+	 <record id="base.main_company" model="res.company">
+            <field name="name">Captivea</field>
+     </record>
+     
+     <record id="base.main_partner" model="res.partner">
+            <field name="name">Captivea</field>
+            <field name="street">159 Allée Albert Sylvestre</field>
+            <field name="city">Chambéry</field>
+            <field name="zip">73000</field>
+            <field name="phone">04 82 53 02 35</field>
+            <field name="email">contact@captivea.com</field>
+            <field name="website">www.captivea.com/</field>
+     </record>
+          
+
+<!-- REMOVE CAMP TO CAMP -->     
+     <record id="base.res_partner_12" model="res.partner">
+            <field name="name">Captivea.COM</field>
+            <field name="street">159 Allée Albert Sylvestre</field>
+            <field name="city">Chambéry</field>
+            <field name="zip">73000</field>
+            <field name="phone">04 82 53 02 35</field>
+            <field name="email">contact@captivea.com</field>
+            <field name="website">www.captivea.com/</field>
+            <field name="image" type="base64" file="base/static/img/main_partner-image.png"/>
+           
+        	<field name="website_short_description">Partenaire de votre système d'information, Captivea accompagne les entreprises dans la mise en oeuvre de leurs solutions informatiques.</field>
+        <field name="website_description"><![CDATA[Founded in 2001, Camptocamp is Odoo Gold Partner since 2006 in Switzerland, France and Austria and has about 50 employees all Professional Open Source. <br/> <br/>
+<p>Nos experts techniques et métier consolident depuis 11 ans leur savoir-faire. Passionnés par leur métier, ces experts mettent à votre service leur expérience et leurs compétences, et peuvent ainsi vous garantir l'efficacité des solutions techniques mises en place pour votre projet.
+<p>Développer de la valeur ajoutée ! Nous avons à cœur de comprendre vos enjeux métiers et d’être force de proposition pour augmenter votre chiffre d’affaire et optimiser votre fonctionnement. </p><br/>        
+<p>Nos clients apprécient notre expertise technique et métier, la pertinence de notre méthode projet et également la qualité des relations humaines que nous construisons ensemble.</p><br/>
+<p>Captivea, c'est : </p>
+<ul>
+	<li>Une implantation avec 3 agences à Paris, Chambéry et Grenoble </li>
+	<li>Des effectifs de 30 personnes</li>
+	<li>11 ans d’existence; 11 ans d'expérience Depuis 2007</li>
+	<li>+ de 200 clients;Entreprises accompagnées dans la mise en oeuvre de leur système d'information </li>
+	<li>Expertise Technique; Forte expertise technique et métier</li>	
+</ul>
+
+]]></field>
+    </record>     
+     <record id="analytic.analytic_partners_camp_to_camp" model="account.analytic.account">
+     	<field name="name">Captivea</field>
+     </record>
+     
+     <record id="analytic.analytic_integration_c2c" model="account.analytic.account">
+            <field name="name">Captivea</field>            
+    </record>
+    
+     <record id="event.reg_2_0" model="event.registration">
+        <field name="name">Captivea</field>
+        <field name="email">odoo@captivea.fr</field>
+    </record>
+    
+    <record id="point_of_sale.partner_product_8" model="product.product">
+          <field name="list_price">99999.99</field>
+          <field name="name">captivea.com</field>
+	</record>
+
+<!-- USER BASE -->
+ 	<!-- JDA -->
+     <record id="base.partner_demo" model="res.partner">
+     		<field name="parent_id" ref="base.res_partner_12"/>
+            <field name="name">David Jardin</field>
+            <field name="email">david.jardin@captivea.fr</field>
+            <field name="company_name">Captivea</field>
+            <field name="city">Chambéry</field>
+            <field name="zip">73000</field>
+            <field name="country_id" ref="base.fr"/>
+			<field name="image" type="base64" file="cap_demo/static/img/DJA.jpeg"/>            
+     </record>
+         
+     <record id="base.user_demo" model="res.users">
+            <field name="partner_id" ref="base.partner_demo"/>
+            <field name="login">DJA</field>
+            <field name="password">dja</field>
+            <field name="signature" type="xml"><span>-- <br/>+Mr David Jardin</span></field>
+            <field name="image" type="base64" file="cap_demo/static/img/DJA.jpeg"/>
+     </record>
+  <!-- SGU -->   
+     <record id="partner_demo2" model="res.partner">
+     		<field name="parent_id" ref="base.res_partner_12"/>
+            <field name="name">Sylvain Guers</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="customer" eval="False"/>
+            <field name="email">sylvain.guers@captivea.net</field>
+            <field name="company_name">Captivea</field>
+            <field name="street">Avenue des Dessus-de-Lives, 2</field>
+            <field name="city">Chambéry</field>
+            <field name="zip">73000</field>
+            <field name="country_id" ref="base.fr"/>
+     </record>
+         
+     <record id="user_demo2" model="res.users">     	
+            <field name="partner_id" ref="partner_demo2"/>
+			<field name="login">SGU</field>            
+            <field name="password">sgu</field>
+            <field name="signature" type="xml"><span>-- <br/>+Mr Sylvain Guiers</span></field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager')])]"/>
+            <field name="image" type="base64" file="base/static/img/user_demo-image.jpg"/>
+     </record>
+     
+      <!-- BGA -->   
+     <record id="partner_demo3" model="res.partner">
+     	    <field name="parent_id" ref="base.res_partner_12"/>
+            <field name="name">Baptiste Gavarini</field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="customer" eval="False"/>
+            <field name="email">baptiste.gavarini@captivea.fr</field>
+            <field name="company_name">Captivea</field>
+            <field name="street">Avenue des Dessus-de-Lives, 2</field>
+            <field name="city">Chambéry</field>
+            <field name="zip">73000</field>
+         	<field name="country_id" ref="base.fr"/>
+         	<field name="image" type="base64" file="cap_demo/static/img/BGA.jpeg"/>  
+     </record>
+         
+     <record id="user_demo3" model="res.users">
+            <field name="partner_id" ref="partner_demo3"/>
+            <field name="login">BGA</field>
+            <field name="password">bga</field>
+            <field name="signature" type="xml"><span>-- <br/>+Mr Baptiste Gavarini</span></field>
+            <field name="company_id" ref="base.main_company"/>
+            <field name="groups_id" eval="[(6,0,[ref('base.group_user'), ref('base.group_partner_manager')])]"/>
+            <field name="image" type="base64" file="cap_demo/static/img/BGA.jpeg"/>
+     </record>
+
+</odoo>

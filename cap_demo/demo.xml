@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!-- Calendrier -->
+        <record id="calendar.calendar_event_1" model="calendar.event">
+            <field name="name">Suivi des propositions de projets</field>
+            <field name="description">Rencontre pour discuter du plan de projet et définir les détails de la mise en œuvre.</field>
+        </record>
+
+        <record id="calendar.calendar_event_2" model="calendar.event">
+            <field name="name">Discussion initiale</field>
+            <field name="description">Discussion avec le clients pour les produits .</field>
+        </record>
+
+        <record id="calendar.calendar_event_3" model="calendar.event">
+            <field name="name">Discussion sur les prix</field>
+            <field name="description">Réunion interne de discussion sur les nouveaux pris pour les produits et les services.</field>
+        </record>
+
+        <record id="calendar.calendar_event_4" model="calendar.event">
+            <field name="name">Revue des pré-requis</field>
+        </record>
+
+        <record id="calendar.calendar_event_5" model="calendar.event">
+            <field name="name">Changement sur le Design</field>
+        </record>
+
+        <record id="calendar.calendar_event_6" model="calendar.event">
+            <field name="name">Présentation pour les nouveaux Services</field>
+        </record>
+
+        <record id="calendar.calendar_event_7" model="calendar.event">
+            <field name="name">Présentation du nouveau calendrier</field>
+        </record>
+        
+<!-- LEAD -->
+
+
+	      <!--  Demo Leads -->
+        <record id="crm.crm_case_1" model="crm.lead">
+            <field name="name">Plan d'assister à une formation</field>
+            <field name="function">Responsable entraineur</field>  
+        </record>
+        <record id="crm.msg_case1_1" model="mail.message">
+            <field name="subject">Enquête</field>
+            <field name="body"><![CDATA[<p>Bonjour,<br />
+            Je suis Jacques de Le Club SARL. Je suis intéressé à assister à une formation organisée dans votre entreprise. <br />
+             Pouvez-vous m'envoyer les détails?</p>]]></field>
+        </record>
+
+        <record id="crm.crm_case_2" model="crm.lead">
+            <field name="name">Intérêt pour votre nouveau logiciel</field>
+            <field name="function">Responsable Achat</field>
+        </record>
+        <record id="crm.msg_case2_1" model="mail.message">
+            <field name="subject">Besoin de Details</field>
+            <field name="body">Veux connaître les caractéristiques et les avantages de l'utilisation du nouveau logiciel.</field>
+        </record>
+
+        <record id="crm.crm_case_3" model="crm.lead">
+            <field name="name">Besoin d'informations sur la conception Web</field>
+        </record>
+
+        <record id="crm.crm_case_4" model="crm.lead">
+            <field name="name">Besoin d'un nouveau site web</field>
+        </record>
+
+        <record id="crm.crm_case_5" model="crm.lead">
+            <field name="name">Besoin d'un devis pour les ordinateurs avec accessoires</field>
+            <field name="function">Responsable Achat</field>
+        </record>
+        <record id="crm.msg_case5_1" model="mail.message">
+            <field name="subject">Enquête</field>
+            <field name="body"><![CDATA[<p>Salut,<br />
+	Pouvez-vous m'envoyer un devis pour 20 ordinateurs avec haut-parleurs? <br />
+Cordialement, <br />
+Carrie Helle, <br />
+Directeur des achats <br />
+Stonage IT, <br />
+Philadelphie <br />
+Contact: +1 813 494 5005 </ p>]]></field>
+        </record>
+
+        <record id="crm.crm_case_6" model="crm.lead">
+            <field name="name">Besoin d'informations sur vos services</field>
+        </record>
+
+        <record id="crm.crm_case_7" model="crm.lead">
+            <field name="name">Info apropos de Captivea</field>
+            <field name="function">Journaliste</field>
+        </record>
+
+        <record id="crm.crm_case_8" model="crm.lead">
+            <field name="name">Catalogue produit</field>
+            <field name="function">Ventes</field>
+        </record>
+        <record id="crm.msg_case8_1" model="mail.message">
+            <field name="subject">Enquête</field>
+            <field name="body"><![CDATA[<p>Salut,<br />
+Pourriez-vous m'envoyer votre catalogue de produits s'il vous plaît? <br />
+Cordialement, <br />
+David Logan <br />
+Expert ESM <br />]]></field>
+        </record>
+
+        <record id="crm.crm_case_9" model="crm.lead">
+            <field name="name">Détails du partenariat</field>
+            <field name="function">Vendeurs</field>
+        </record>
+
+        <record id="crm.crm_case_10" model="crm.lead">
+            <field name="name">Informations sur l'ordinateur portable</field>
+        </record>
+        <record id="crm.msg_case10_1" model="mail.message">
+            <field name="subject">Enquête</field>
+            <field name="body"><![CDATA[<p>Salut,<br />
+	Je voudrais en savoir plus sur les spécifications et le coût des ordinateurs portables de votre entreprise. <br />
+Merci,<br />
+Andrew</p>]]></field>
+        </record>
+
+        <record id="crm.crm_case_11" model="crm.lead">
+            <field name="name">Besoin de coût estimé pour le nouveau projet</field>
+            <field name="function">Consultant fonctionnel</field>
+        </record>
+
+        <record id="crm.crm_case_12" model="crm.lead">
+            <field name="name">Besoin de devis pour 100 PC et 100 claviers</field>
+        </record>
+
+        <!-- Demo Opportunities -->
+        <record id="crm.crm_case_13" model="crm.lead">
+            <field name="name">Plan d'achat de 60 claviers et souris</field>
+            <field name="title_action">Réunion pour passer en revue les informations sur les prix.</field>
+        </record>
+
+        <record id="crm.crm_case_14" model="crm.lead">
+            <field name="name">Intérêt pour votre projet de design graphique</field>
+            <field name="title_action">Envoyer le catalogue par courrier électronique</field>
+        </record>
+
+        <record id="crm.crm_case_15" model="crm.lead">
+            <field name="name">Prévoyez d'acheter des serveurs RedHat</field>
+            <field name="title_action">Appelez pour obtenir les exigences du système</field>
+        </record>
+        <record id="crm.msg_case15_attach1" model="ir.attachment">
+            <field name="datas">bWlncmF0aW9uIHRlc3Q=</field>
+            <field name="datas_fname">YourCompany2012.doc</field>
+            <field name="name">YourCompany2012.doc</field>
+        </record>
+        <record id="crm.msg_case15_1" model="mail.message">
+            <field name="subject">Prévoyez d'acheter des serveurs RedHat</field>
+            <field name="body"><![CDATA[<div>
+            <p> Bonjour, </ p>
+             <p> Je suis intéressé par les produits de votre entreprise et je prévois d'acheter un nouvel ordinateur portable doté des dernières technologies et d'un prix abordable. </ p>
+             <p> Pourriez-vous s'il vous plaît m'envoyer le catalogue de produits? </ p>]]></field>
+        </record>
+        
+        <record id="crm.msg_case15_2" model="mail.message">
+            <field name="subject">Re: Prévoyez d'acheter des serveurs RedHat</field>
+            <field name="body"><![CDATA[<p> Cher client, <br/>
+             Merci de montrer de l'intérêt pour nos produits! Comme demandé, je vous envoie notre catalogue de produits. <br />
+             Pour être en mesure d'affiner la solution, nous aimerions connaître les besoins précis. De cette façon, nous serons en mesure de vous aider à choisir la bonne infrastructure en fonction de vos besoins. <br/>
+             Cordialement, </ p>]]></field>
+        </record>
+        <record id="crm.msg_case15_3" model="mail.message">
+            <field name="subject">Re: Prévoyez d'acheter des serveurs RedHat</field>
+            <field name="body"><![CDATA[<p>Merci pour l'information! <br /> J'ai demandé une spécification précise à notre expert technique. Voici ce dont nous avons précisément besoin: </ p>
+             <ul>
+                 <li> sauvegardes hebdomadaires, tous les lundis </ li>
+                 <li> l'heure de sauvegarde n'est pas un point de blocage pour nous, car nous sommes fermés tous les lundis, ce qui laisse suffisamment de temps pour effectuer la sauvegarde </ li>
+                 <li> la fiabilité est très importante; nous avons besoin de serveurs redondants et de capacité de restauration </ li>
+                 <li> une capacité totale d'environ 2 To </ li>
+             </ ul>
+             <p> Cordialement, </ p>]]></field>
+        </record>
+        <record id="crm.msg_case15_4" model="mail.message">
+            <field name="subject">Re: Prévoyez d'acheter des serveurs RedHat</field>
+            <field name="body"><![CDATA[<p>Bonjour</p>
+        	  <p> Après notre discussion avec nos experts techniques, voici l'offre de YourCompany. Nous croyons qu'il répondra à toutes les exigences que vous aviez en tête. N'hésitez pas à me contacter pour tout détail ou détail technique qui n'est pas assez clair pour vous. </ P>
+             <p> Notez que comme convenu au téléphone, nous vous offrons <b> 10% de réduction sur le matériel </ b>! </ p>
+             <p> Cordialement, </ p>]]></field>
+        </record>
+
+        <record id="crm.crm_case_16" model="crm.lead">
+            <field name="name">Besoin d'un nouveau design pour mon site web</field>
+            <field name="title_action">Convertir en devis</field>
+        </record>
+
+        <record id="crm.crm_case_17" model="crm.lead">
+            <field name="name">Informations sur les prix des services</field>
+            <field name="title_action">Envoyer notre liste de prix de service</field>
+        </record>
+        <record id="crm.msg_case17_1" model="mail.message">
+            <field name="subject">Catalogue à envoyer</field>
+            <field name="body"><![CDATA[<p>Ils veulent juste des informations sur les prix de nos services. Je pense que l'envoi de notre catalogue devrait être suffisant.</p>]]></field>
+        </record>
+
+        <record id="crm.crm_case_18" model="crm.lead">
+            <field name="name">Plan de formation du stagiaire dans votre organisation</field>
+            <field name="title_action">Appelez pour obtenir des besoins de formation</field>
+        </record>
+        <record id="crm.msg_case18_1" model="mail.message">
+            <field name="subject">Enquête</field>
+            <field name="body"><![CDATA[<p>Bonjour!<br />
+				Je suis Leland Martinez, du Delta PC. Peut-être vous rappelez-vous, nous avons parlé un peu le mois dernier lors de cette conférence internationale. <br />
+             Nous aimerions assister à une formation, mais nous ne sommes pas certains de ce que nous pouvons demander. Peut-être devrions-nous nous rencontrer et en parler? <br />
+             Meilleures salutations,</p>]]></field>
+        </record>
+        <record id="crm.msg_case18_2" model="mail.message">
+            <field name="body"><![CDATA[<p>Cela semble très intéressant. Comme vous le dites, nous devrons tout d'abord définir précisément ce que sera la formation et vos besoins précis.</p>]]></field>
+        </record>
+
+        <record id="crm.crm_case_19" model="crm.lead">
+            <field name="name">Intérêt pour vos pièces personnalisables</field>
+            <field name="title_action">Suivi de la proposition</field>
+        </record>
+
+        <record id="crm.crm_case_20" model="crm.lead">
+            <field name="name">Intérêt dans votre contrat de partenariat</field>
+        </record>
+
+        <record id="crm.crm_case_21" model="crm.lead">
+            <field name="name">Développement de projet "Resource Planning"</field>
+        </record>
+
+        <record id="crm.crm_case_22" model="crm.lead">
+            <field name="name">Besoin d'un script pour importer des données externes</field>
+        </record>
+
+        <record id="crm.crm_case_23" model="crm.lead">
+            <field name="name">Veux s'abonner à la solution en ligne</field>
+        </record>
+
+        <record id="crm.crm_case_24" model="crm.lead">
+            <field name="name">Besoin de 20 jours de consultation</field>
+        </record>
+
+        <record id="crm.crm_case_25" model="crm.lead">
+            <field name="name">Besoin de personnaliser la solution</field>
+            <field name="title_action">Conf call avec le centre technique</field>
+        </record>
+
+        <record id="crm.crm_case_26" model="crm.lead">
+            <field name="name">Apprécierait plus d'informations sur vos produits</field>
+            <field name="title_action">Envoyer le catalogue par email</field>
+        </record>
+
+        <record id="crm.crm_case_27" model="crm.lead">
+            <field name="name">Intérêt pour vos produits</field>
+            <field name="title_action">Envoyer le catalogue par email</field>
+        </record>		
+
+</odoo>

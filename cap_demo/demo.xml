@@ -248,6 +248,36 @@ Andrew</p>]]></field>
             <field name="title_action">Envoyer le catalogue par email</field>
         </record>
         
+        <record id="crm.activity_1" model="mail.activity">
+            <field name="summary">Réunion pour passer en revue les informations sur les prix</field>
+        </record>
+        <record id="crm.activity_2" model="mail.activity">
+            <field name="summary">Envoi du catalogue par e-mail</field>
+        </record>
+        <record id="crm.activity_3" model="mail.activity">
+            <field name="summary">Appel pour récupérer les exigences systèmes</field>
+        </record>
+        <record id="crm.activity_4" model="mail.activity">
+            <field name="summary">Convertir en devis</field>
+        </record>
+        <record id="crm.activity_5" model="mail.activity">
+            <field name="summary">Envoi de notre liste de prix de service</field>
+        </record>
+        <record id="crm.activity_6" model="mail.activity">
+            <field name="summary">Appel pour les besoins de formation</field>
+        </record>
+        <record id="crm.activity_7" model="mail.activity">
+            <field name="summary">Relance de la proposition</field>
+        </record>
+
+        <record id="crm.activity_13" model="mail.activity">
+            <field name="summary">Conférence téléphonique avec le service technique</field>
+        </record>
+        <record id="crm.activity_14" model="mail.activity">
+            <field name="summary">Envoi du catalogue par e-mail</field>
+        </record>
+        
+        
 	<!-- account.payment.term -->
 	   <record id="account.account_payment_term_advance" model="account.payment.term">
             <field name="note">Condition de règlement : 30% d'avance, fin du mois suivant</field>

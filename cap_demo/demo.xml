@@ -33,8 +33,6 @@
         </record>
         
 <!-- LEAD -->
-
-
 	      <!--  Demo Leads -->
         <record id="crm.crm_case_1" model="crm.lead">
             <field name="name">Plan d'assister à une formation</field>
@@ -248,6 +246,13 @@ Andrew</p>]]></field>
         <record id="crm.crm_case_27" model="crm.lead">
             <field name="name">Intérêt pour vos produits</field>
             <field name="title_action">Envoyer le catalogue par email</field>
-        </record>		
+        </record>
+        
+	<!-- account.payment.term -->
+	   <record id="account.account_payment_term_advance" model="account.payment.term">
+            <field name="note">Condition de règlement : 30% d'avance, fin du mois suivant</field>
+        </record>
+       
 
 </odoo>
+

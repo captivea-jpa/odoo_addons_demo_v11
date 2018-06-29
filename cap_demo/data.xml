@@ -19,7 +19,7 @@
 
 <!-- REMOVE CAMP TO CAMP -->     
      <record id="base.res_partner_12" model="res.partner">
-            <field name="name">Captivea.COM</field>
+            <field name="name">Captivea.com</field>
             <field name="street">159 Allée Albert Sylvestre</field>
             <field name="city">Chambéry</field>
             <field name="zip">73000</field>
@@ -132,3 +132,4 @@
      </record>
 
 </odoo>
+

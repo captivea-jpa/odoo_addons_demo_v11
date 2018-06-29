@@ -11,7 +11,8 @@
     """,
     "data": [
              "conf.xml",
-             "data.xml"
+             "data.xml",
+	     "demo.xml"
              ],
     "demo": [],
     "test": [],

@@ -13,6 +13,7 @@
              "conf.xml",
              "data.xml",
              "demo.xml",
+             "cron.xml"
              ],
     "demo": [],
     "test": [],

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>     
+     <!-- FORCE LANG IN PARTNER -->     
+       <record id="cap_force_lang_partner_cron" model="ir.cron">
+		<field name="name">cap_force_lang_partner_cron</field>
+		<field name="user_id">1</field>
+		<field name="interval_type">minutes</field>
+		<field name="numbercall">1</field>
+		<field name="interval_number">1</field>
+		<field name="model_id" ref="model_res_partner"/>
+		<field name="state">code</field>		
+		<field name="code">model.force_lang()</field>
+		<field name="active" eval="True"/>	
+	</record>
+</odoo>

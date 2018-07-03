@@ -12,7 +12,7 @@
     "data": [
              "conf.xml",
              "data.xml",
-	     "demo.xml"
+             "demo.xml",
              ],
     "demo": [],
     "test": [],

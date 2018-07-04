@@ -19,31 +19,35 @@
 	  	<field name="lang">fr_FR</field>
       </record>
 	
-<!-- SALE -->	
-      <record model="res.config.settings" id="demo_values">
+	<!-- C'est ici que ce fait l'install pour les conf particulières -->	
+      <record model="res.config.settings" id="conf_values">
+      	<!-- SALE -->
         <field name="group_product_variant" eval="1"/>
         <field name="group_uom" eval="1"/>
         <field name="sale_pricelist_setting">formula</field>
 		<field name="group_sale_layout" eval="1"/>
 		<field name="group_route_so_lines" eval="1"/>
+		<field name="group_discount_per_so_line" eval="1"/>
+		<field name="portal_confirmation" eval="1"/>
+		<field name="portal_confirmation_options">sign</field>		
+		<field name="module_sale_payment" eval="1"/>
+				
+		<!-- STOCK -->		
+		<field name="group_stock_packaging" eval="1"/>
+		<field name="group_stock_tracking_lot" eval="1"/>
+		<field name="module_stock_barcode" eval="1"/>
+		<field name="module_stock_picking_batch" eval="1"/>  
+		
+		<!-- INVOICE -->		
+		<field name="module_account_sepa" eval="1"/>
+		<field name="module_account_sepa_direct_debit" eval="1"/>
+		<field name="module_account_payment" eval="1"/>
      </record>
 
     <function model="res.config.settings" name="execute">
-    	<value eval="[ref('demo_values')]"/>
+    	<value eval="[ref('conf_values')]"/>
 		<value eval="{}"/>    	
 	</function>
-	
-<!-- STOCK -->	
-	<record model="res.config.settings" id="demo_values_stock">
-        <field name="group_stock_packaging" eval="1"/>
-		<field name="group_stock_tracking_lot" eval="1"/>     
-     </record>
 
-    <function model="res.config.settings" name="execute">
-    	<value eval="[ref('demo_values_stock')]"/>
-		<value eval="{}"/>
-	</function>
-	
-<!-- ACCOUNT -->
 
 </odoo>

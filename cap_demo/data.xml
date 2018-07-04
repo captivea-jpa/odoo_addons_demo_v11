@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<odoo>
+<odoo noupdate="1">
 	
 <!-- COMPANY BASE -->	
 	 <record id="base.main_company" model="res.company">
@@ -17,16 +17,16 @@
      </record>
           
 
-<!-- REMOVE CAMP TO CAMP -->     
+<!-- REPLACE CAMP TO CAMP to CAPTIVEA-->     
      <record id="base.res_partner_12" model="res.partner">
-            <field name="name">Captivea.com</field>
+            <field name="name">Captivea</field>
             <field name="street">159 Allée Albert Sylvestre</field>
             <field name="city">Chambéry</field>
             <field name="zip">73000</field>
             <field name="phone">04 82 53 02 35</field>
             <field name="email">contact@captivea.com</field>
             <field name="website">www.captivea.com/</field>
-            <field name="image" type="base64" file="base/static/img/main_partner-image.png"/>
+            <field name="image" type="base64" file="cap_demo/static/img/captivea.png"/>
            
         	<field name="website_short_description">Partenaire de votre système d'information, Captivea accompagne les entreprises dans la mise en oeuvre de leurs solutions informatiques.</field>
         <field name="website_description"><![CDATA[Founded in 2001, Camptocamp is Odoo Gold Partner since 2006 in Switzerland, France and Austria and has about 50 employees all Professional Open Source. <br/> <br/>
@@ -57,10 +57,9 @@
         <field name="email">odoo@captivea.fr</field>
     </record>
     
-    <record id="point_of_sale.partner_product_8" model="product.product">
-          <field name="list_price">99999.99</field>
-          <field name="name">captivea.com</field>
-	</record>
+<!-- POINT OF SALE PRODUCT --> 
+    <delete model="product.product" id="point_of_sale.partner_product_8"/>    
+	<delete model="product.product" id="point_of_sale.partner_product_9"/>    
 
 <!-- USER BASE -->
  	<!-- JDA -->

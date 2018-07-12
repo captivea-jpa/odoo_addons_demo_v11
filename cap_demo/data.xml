@@ -58,8 +58,12 @@
     </record>
     
 <!-- POINT OF SALE PRODUCT --> 
-    <delete model="product.product" id="point_of_sale.partner_product_8"/>    
-	<delete model="product.product" id="point_of_sale.partner_product_9"/>    
+	<record id="point_of_sale.partner_product_8" model="product.product">
+        <field name="name">Captivea</field>
+    </record>
+    <record id="point_of_sale.partner_product_9" model="product.product">
+        <field name="name">Captivea</field>
+    </record>
 
 <!-- USER BASE -->
  	<!-- JDA -->
